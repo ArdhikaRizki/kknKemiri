@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KKN Dusun Kemiri, Wonosobo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION BAR
+       Sticky top nav with logo and links.
+       ============================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Ganti "#" dengan logo universitas jika sudah ada -->
+      <a href="#" class="nav-logo">KKN <span>Kemiri</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#programs">Program Kerja</a></li>
+        <li><a href="#team">Tim</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================
+       HERO SECTION
+       Full-screen hero with background image,
+       title, timeline, and tagline.
+       ============================ -->
+  <section class="hero" id="hero">
+    <!-- Ganti URL gambar di bawah dengan foto latar belakang alam Wonosobo -->
+    <div
+      class="hero-bg"
+      style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80')"
+    ></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Ganti tanggal di bawah dengan tanggal pelaksanaan yang sebenarnya -->
+      <p class="hero-date">1 Juli &mdash; 30 Juli 2025</p>
+      <h1 class="hero-title">KKN Dusun Kemiri</h1>
+      <p class="hero-subtitle">Kabupaten Wonosobo, Jawa Tengah</p>
+      <p class="hero-tagline">
+        "Membangun Desa Bersama, Mengabdi untuk Negeri"
+      </p>
+      <a href="#about" class="hero-btn">Kenali Lebih Lanjut</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ABOUT SECTION
+       Village profile and KKN background.
+       ============================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Tentang Kami</p>
+        <h2 class="section-title">Dusun Kemiri</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <!-- Kolom gambar — ganti src dengan foto desa -->
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80"
+            alt="Pemandangan Desa Dusun Kemiri"
+          />
+          <div class="about-image-accent"></div>
+        </div>
+        <!-- Kolom teks profil desa -->
+        <div class="about-text">
+          <h3>Profil Desa & Potensi Lokal</h3>
+          <!-- Ganti paragraf di bawah dengan deskripsi nyata desa -->
+          <p>
+            Dusun Kemiri merupakan salah satu dusun yang terletak di wilayah
+            Kabupaten Wonosobo, dikenal dengan keindahan alamnya yang asri dan
+            udaranya yang sejuk. Dikelilingi oleh perbukitan hijau dan lahan
+            pertanian yang subur, dusun ini menyimpan berbagai potensi yang
+            layak untuk dikembangkan.
+          </p>
+          <p>
+            Masyarakat Dusun Kemiri mayoritas berprofesi sebagai petani dan
+            peternak dengan komoditas unggulan berupa sayur-mayur dataran tinggi
+            dan product olahan lokal. Kekompakan warga dan semangat gotong-royong
+            menjadi nilai tambah bagi keberhasilan program pengabdian kami.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="350">0</span>
+              <span class="stat-label">Jumlah Penduduk</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="85">0</span>
+              <span class="stat-label">KK</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="30">0</span>
+              <span class="stat-label">Hari Pengabdian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       WORK PROGRAMS SECTION
+       Cards for each KKN initiative.
+       ============================ -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Apa yang Kami Kerjakan</p>
+        <h2 class="section-title">Program Kerja</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="programs-grid">
+
+        <!-- === KARTU PROGRAM 1 === -->
+        <div class="program-card">
+          <div class="program-icon">
+            <!-- Icon SVG untuk pendidikan -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <h3 class="program-title">Pendidikan & Literasi</h3>
+          <!-- Ganti teks deskripsi program sesuai kebutuhan -->
+          <p class="program-desc">
+            Program bimbingan belajar dan pelatihan literasi digital untuk
+            anak-anak usia sekolah guna meningkatkan minat baca dan kemampuan
+            teknologi informasi.
+          </p>
+          <span class="program-tag">Edukasi</span>
+        </div>
+
+        <!-- === KARTU PROGRAM 2 === -->
+        <div class="program-card">
+          <div class="program-icon">
+            <!-- Icon SVG untuk pertanian -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="program-title">Pertanian Berkelanjutan</h3>
+          <p class="program-desc">
+            Pendampingan teknik urban farming dan pengolahan lahan pekarangan
+            untuk ketahanan pangan keluarga serta peningkatan penghasilan warga.
+          </p>
+          <span class="program-tag">Lingkungan</span>
+        </div>
+
+        <!-- === KARTU PROGRAM 3 === -->
+        <div class="program-card">
+          <div class="program-icon">
+            <!-- Icon SVG untuk ekonomi kreatif -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3 class="program-title">Ekonomi Kreatif</h3>
+          <p class="program-desc">
+            Pelatihan pemasaran digital dan pengemasan produk lokal agar
+            hasil karya warga dapat menjangkau pasar yang lebih luas secara
+            daring.
+          </p>
+          <span class="program-tag">Ekonomi</span>
+        </div>
+
+        <!-- === KARTU PROGRAM 4 === -->
+        <div class="program-card">
+          <div class="program-icon">
+            <!-- Icon SVG untuk kesehatan -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3 class="program-title">Kesehatan Masyarakat</h3>
+          <p class="program-desc">
+            Penyuluhan pola hidup sehat, pemeriksaan kesehatan dasar, dan
+            pengabdian masyarakat di bidang kesehatan untuk meningkatkan
+            kualitas hidup warga.
+          </p>
+          <span class="program-tag">Kesehatan</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TEAM SECTION
+       10 member grid with roles.
+       Ubah data di HTML ini untuk memperbarui profil anggota.
+       ============================ -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Kenali Kami</p>
+        <h2 class="section-title">Profil Tim</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- ====== KOORDINATOR ====== -->
+      <h3 class="team-role-heading">Koordinator</h3>
+      <div class="team-grid team-grid--small">
+        <!-- Ganti src foto, nama, NIM, dan jurusan di bawah -->
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Foto Koordinator" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Koordinator</h4>
+            <p class="team-nim">NIM: 1234567890</p>
+            <span class="team-role role-coordinator">Koordinator</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== SEKRETARIS & BENDAHARA ====== -->
+      <h3 class="team-role-heading">Sekretaris & Bendahara</h3>
+      <div class="team-grid team-grid--medium">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Foto Sekretaris" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Sekretaris</h4>
+            <p class="team-nim">NIM: 1234567892</p>
+            <span class="team-role role-secretary">Sekretaris</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Foto Bendahara" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Bendahara</h4>
+            <p class="team-nim">NIM: 1234567893</p>
+            <span class="team-role role-treasurer">Bendahara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== DIVISI ACARA ====== -->
+      <h3 class="team-role-heading">Divisi Acara</h3>
+      <div class="team-grid team-grid--medium">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80" alt="Foto Divisi Acara 1" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 1</h4>
+            <p class="team-nim">NIM: 1234567894</p>
+            <span class="team-role role-event">Divisi Acara</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80" alt="Foto Divisi Acara 2" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 2</h4>
+            <p class="team-nim">NIM: 1234567895</p>
+            <span class="team-role role-event">Divisi Acara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== HUMAS & DOKUMENTASI ====== -->
+      <h3 class="team-role-heading">Humas & Dokumentasi</h3>
+      <div class="team-grid team-grid--medium">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80" alt="Foto Humas 1" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 1</h4>
+            <p class="team-nim">NIM: 1234567896</p>
+            <span class="team-role role-pr">Humas & Dokumentasi</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Foto Humas 2" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 2</h4>
+            <p class="team-nim">NIM: 1234567897</p>
+            <span class="team-role role-pr">Humas & Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== DIVISI LOGISTIK ====== -->
+      <h3 class="team-role-heading">Divisi Logistik</h3>
+      <div class="team-grid team-grid--medium">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Foto Logistik 1" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 1</h4>
+            <p class="team-nim">NIM: 1234567898</p>
+            <span class="team-role role-logistics">Logistik</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Foto Logistik 2" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Anggota 2</h4>
+            <p class="team-nim">NIM: 1234567899</p>
+            <span class="team-role role-logistics">Logistik</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Foto Wakil Koordinator" />
+          </div>
+          <div class="team-info">
+            <h4>Nama Wakil Koordinator</h4>
+            <p class="team-nim">NIM: 1234567891</p>
+            <span class="team-role role-logistics">Logistik</span>
+          </div>
+        </div>
+    
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       GALLERY SECTION
+       Photo grid placeholder.
+       Ganti URL src gambar dengan foto kegiatan nyata.
+       ============================ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Dokumentasi</p>
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <!-- Ganti URL src dengan foto kegiatan KKN yang sebenarnya -->
+        <div class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80" alt="Kegiatan 1" />
+          <div class="gallery-overlay"><span>Bimbingan Belajar Anak</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="Kegiatan 2" />
+          <div class="gallery-overlay"><span>Panen Raya</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&q=80" alt="Kegiatan 3" />
+          <div class="gallery-overlay"><span>Penyuluhan Kesehatan</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?w=600&q=80" alt="Kegiatan 4" />
+          <div class="gallery-overlay"><span>Bakti Sosial</span></div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80" alt="Kegiatan 5" />
+          <div class="gallery-overlay"><span>Workshop Digital</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80" alt="Kegiatan 6" />
+          <div class="gallery-overlay"><span>Gotong Royong</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+       Contact info, social media, university logo.
+       ============================ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Kolom 1: Logo universitas & deskripsi singkat -->
+        <div class="footer-col">
+          <!-- Ganti src dengan logo universitas Anda -->
+          <div class="footer-logo">
+            <img
+              src="https://via.placeholder.com/120x60/2d6a4f/ffffff?text=UNIVERSITAS"
+              alt="Logo Universitas"
+            />
+          </div>
+          <p class="footer-desc">
+            Program KKN Universitas di Dusun Kemiri, Wonosobo.
+            Mengabdi dengan hati, membangun desa dengan integritas.
+          </p>
+        </div>
+
+        <!-- Kolom 2: Tautan navigasi -->
+        <div class="footer-col">
+          <h4>Tautan</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#programs">Program Kerja</a></li>
+            <li><a href="#team">Profil Tim</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Informasi kontak -->
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul class="footer-contact">
+            <li>
+              <!-- Icon email -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>email@universitas.ac.id</span>
+            </li>
+            <li>
+              <!-- Icon telepon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+62 812-3456-7890</span>
+            </li>
+            <li>
+              <!-- Icon alamat -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Dusun Kemiri, Wonosobo, Jawa Tengah</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4: Media sosial -->
+        <div class="footer-col">
+          <h4>Ikuti Kami</h4>
+          <div class="footer-social">
+            <!-- Ganti href "#" dengan URL media sosial Anda -->
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter/X" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.77a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garis bawah copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 KKN Dusun Kemiri &mdash; Universitas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
